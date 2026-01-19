@@ -1,0 +1,22 @@
+﻿# Visual Studio
+.vs/
+bin/
+obj/
+
+# Build
+Debug/
+Release/
+
+# MAUI
+*.user
+*.suo
+*.cache
+*.csproj.user
+
+# Mac / Android artifacts
+*.DS_Store
+*.apk
+*.aab
+
+# Rider
+.idea/
