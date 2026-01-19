@@ -8,7 +8,7 @@
             Padding="30,0"
             Spacing="25">
 
-            <!-- Hello app UI -->
+            
             <Label Text="Enter your name:" FontSize="18" />
             <Entry x:Name="NameEntry" Placeholder="Your name" />
             <Button Text="Greet" Clicked="OnGreetClicked" HorizontalOptions="Fill" />
