@@ -1,7 +1,5 @@
 ﻿# Life Management App (LMA)
 
-## 📋 Life Management App Plan
-
 ### Core Features
 1. **Task Management (Planner Node)**
    - Kanban-style task board
