@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using LMA.Data;
+using LMA.Interfaces;
+using LMA.ViewModels;
 
 namespace LMA
 {
@@ -14,6 +17,11 @@ namespace LMA
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            // Register services and viewmodels
+            builder.Services.AddSingleton<INotesService, NotesDatabase>();
+            builder.Services.AddSingleton<NotesBoardViewModel>();
+            builder.Services.AddTransient<MainPageViewModel>();
 
 #if DEBUG
     		builder.Logging.AddDebug();
