@@ -10,7 +10,7 @@ public class MainPageViewModel : BaseViewModel
     private readonly INotesService _notesService;
     private string _markdown = string.Empty;
 
-    // Parameterless constructor for XAML/design-time
+    
     public MainPageViewModel() : this(new NotesDatabase())
     {
     }
